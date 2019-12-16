@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
     <body>
         <script src="script.js"></script>
@@ -34,5 +35,16 @@
             </li>
         </ul>
 
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="closePopup" class="close">&times;</span>
+                <div id="editForm" class="header">
+                    <input type="text" id="popupInput" placeholder="Title...">
+                    <button id="cancelChanges" class="addBtn">Cancel</button>
+                    <button id="editTodo" class="addBtn">Approve</button>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
